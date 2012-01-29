@@ -6,7 +6,7 @@ var tableView = Ti.UI.createTableView({
 });
 Ti.include("lib/twitter_api.js");
 var textField = Ti.UI.createTextField({
-		hintText : "Geef hier je tweet in",
+		hintText : "tweet",
 	backgroundColor : "#fff",
 	borderColor : "#fff",
 	borderWidth : 1,

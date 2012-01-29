@@ -3,7 +3,7 @@ Logfile initialized
 [DEBUG] C:\Users\Toon\AppData\Roaming\Titanium\mobilesdk\win32\1.7.2\android\builder.py distribute LessTweet C:\Program Files (x86)\Android\android-sdk C:\Users\Toon\My Documents\Titanium Studio Workspace\LessTweet com.LessTweet D:\programs\Titanium Studio\Mobilesdk\win32\1.7.3.v20111013094213\android\dev_keystore tirocks tidev C:\Users\Toon\Desktop 7
 [INFO] Titanium SDK version: 1.7.2 (07/21/11 09:36 97c3689)
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Users\Toon\My Documents\Titanium Studio Workspace\LessTweet\Resources\window.sUsers.js => C:\Users\Toon\My Documents\Titanium Studio Workspace\LessTweet\build\android\bin\assets\Resources\window.sUsers.js
+[TRACE] COPYING MODIFIED FILE: C:\Users\Toon\My Documents\Titanium Studio Workspace\LessTweet\Resources\window.login.js => C:\Users\Toon\My Documents\Titanium Studio Workspace\LessTweet\build\android\bin\assets\Resources\window.login.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Users\Toon\My Documents\Titanium Studio Workspace\LessTweet\build\android\bin\assets\Resources\appicon.png
