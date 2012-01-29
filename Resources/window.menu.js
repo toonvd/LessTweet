@@ -3,7 +3,7 @@ win.backgroundImage = 'images/background-blue.png';
 var TheTable = Titanium.UI.createTableView({
 	top : Titanium.Platform.displayCaps.platformWidth * 0.50
 });
-Ti.App.leftl;
+Ti.App.leftl
 var logo = Ti.UI.createImageView({
 	image : 'images/LesstweetLogo.png',
 	top : Titanium.Platform.displayCaps.platformWidth * 0.12,
@@ -66,8 +66,7 @@ function createtable() {
 			url : 'window.sUsers.js',
 			navBarHidden : false,
 			modal : true,
-			fullscreen : true,
-			exitOnClose : true,
+			fullscreen : true
 		});
 		newwin1.open();
 	});
@@ -77,8 +76,7 @@ function createtable() {
 			url : 'window.login.js',
 			navBarHidden : false,
 			modal : true,
-			fullscreen : true,
-			exitOnClose : true,
+			fullscreen : true
 		});
 		newwin2.open();
 	});
@@ -89,8 +87,7 @@ function createtable() {
 			navBarHidden : false,
 			modal : true,
 			color : '#fff',
-			fullscreen : true,
-			exitOnClose : true,
+			fullscreen : true
 		});
 		newwin3.open();
 	});
@@ -100,8 +97,7 @@ function createtable() {
 			url : 'window.places.js',
 			navBarHidden : false,
 			modal : true,
-			fullscreen : true,
-			exitOnClose : true,
+			fullscreen : true
 		});
 		newwin4.open();
 	});
@@ -146,7 +142,6 @@ if(Titanium.Gesture.orientation == "portrait") {
 	}
 	createtable();
 }
-
 Ti.Gesture.addEventListener('orientationchange', function(e) {
 	var orientation = getOrientation(e.orientation);
 
