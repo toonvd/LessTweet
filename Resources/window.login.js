@@ -78,7 +78,7 @@ buttonSubmit.addEventListener("click", function() {
 					hasChild : true,
 					tweet : tweets[i].text,
 					user_name : tweets[i].from_user,
-					image : tweets[i].profile_image_url,
+					image : tweets[i].user.profile_image_url,
 					date : tweets[i].created_at
 				});
 
