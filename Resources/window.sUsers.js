@@ -1,5 +1,4 @@
 var win = Titanium.UI.currentWindow;
-var problem;
 win.backgroundImage = 'images/background-blue.png';
 win.barColor = '#000';
 var state = 0;
@@ -73,16 +72,10 @@ buttonSearch.addEventListener("click", function() {
 	Ti.API.debug("http://search.twitter.com/search.json?q=" + textField.value);
 
 	loaderTwitterSearch.open("GET", "http://search.twitter.com/search.json?q=" + textField.value);
-	loaderTwitterSearch.onerror = function(){
-		activityIndicator.hide();
-		alert("Error: controleer de opgegeven naam en uw connectie");
-		problem =1;
-		
-	}
 	loaderTwitterSearch.onload = function() {
 		var result = JSON.parse(this.responseText);
 		var tweets = result.results;
-	if(problem = 0){
+
 		for(var i = 0; i < tweets.length; i++) {
 			var row = Ti.UI.createTableViewRow({
 				height : 'auto',
@@ -132,7 +125,6 @@ buttonSearch.addEventListener("click", function() {
 		}
 		tableView.setData(rows);
 		activityIndicator.hide();
-	}
 	}
 	loaderTwitterSearch.send();
 	
