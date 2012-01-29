@@ -3,7 +3,7 @@ Gelieve de app te testen op gsm of gebruik telnet om een locatie in te stellen o
 Wat je niet kan met deze app: forward/follow/respond/delete
 Wat je wel kan: nearby tweets, door tweets zoeken, tweets posten, je eigen timeline (mits een post) en die van andere users bekijken.
 
-1 bug over: bij het ingeven van een verkeerde waarde bij sUsers loopt hij vast, onerror vangde geen httpclienterror op :s
+1 bug over: bij trage gps verwerking moet je in nearby tweets soms een tweede keer zoeken drukken (blijf in de pagina)
 
 ----------------------------------
 Stuff our legal folk make us say:
