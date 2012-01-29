@@ -75,7 +75,14 @@ buttonSearch.addEventListener("click", function() {
 	loaderTwitterSearch.onload = function() {
 		var result = JSON.parse(this.responseText);
 		var tweets = result.results;
-
+	
+		if(tweets.length == 0.0)
+		{
+			activityIndicator.hide();
+			alert("Er is iets misgelopen: check je internetverbinding en je zoekterm.");
+		}
+		else
+		{
 		for(var i = 0; i < tweets.length; i++) {
 			var row = Ti.UI.createTableViewRow({
 				height : 'auto',
@@ -125,7 +132,8 @@ buttonSearch.addEventListener("click", function() {
 		}
 		tableView.setData(rows);
 		activityIndicator.hide();
-	}
+		}
+	}  	
 	loaderTwitterSearch.send();
 	
 	state = 1;
