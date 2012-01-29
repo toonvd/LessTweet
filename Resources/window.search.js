@@ -75,12 +75,10 @@ buttonSearch.addEventListener("click", function() {
 	loaderTwitterSearch.onerror = function(){
 		activityIndicator.hide();
 		alert("Error: controleer de opgegeven naam en uw connectie");
-		problem =1;
-		
-	}
+		 	}
 	loaderTwitterSearch.onload = function() {
 		var tweets = JSON.parse(this.responseText);
-		if(problem = 0){
+	
 		for(var i = 0; i < tweets.length; i++) {
 			for(var i = 0; i < tweets.length; i++) {
 				var tweetText = tweets[i].text;
@@ -137,7 +135,7 @@ buttonSearch.addEventListener("click", function() {
 			tableView.setData(rows);
 			activityIndicator.hide();
 		}
-	}
+	
 }
 	loaderTwitterSearch.send();
 	state = 1;
