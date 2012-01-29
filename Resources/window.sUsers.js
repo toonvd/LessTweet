@@ -3,7 +3,7 @@ win.backgroundImage = 'images/background-blue.png';
 win.barColor = '#000';
 var state = 0;
 var tableView = Ti.UI.createTableView({
-	top : 140,
+	top : Titanium.Platform.displayCaps.platformHeight * 0.11,
 });
 var textField = Ti.UI.createTextField({
 	hintText : "Zoeken over twitter",
@@ -56,7 +56,8 @@ buttonSearch.addEventListener("click", function() {
 			url : "window.details.js",
 			tweet : el.rowData.tweet,
 			user_name : el.rowData.user_name,
-			image:el.rowData.image,
+			image : el.rowData.image,
+			date : el.rowData.date,
 			barColor : Ti.UI.currentWindow.barColor,
 			backgroundColor : "#fff"
 		});
@@ -80,7 +81,8 @@ buttonSearch.addEventListener("click", function() {
 				hasChild : true,
 				tweet : tweets[i].text,
 				user_name : tweets[i].from_user,
-					image:tweets[i].profile_image_url
+				image : tweets[i].profile_image_url,
+				date : tweets[i].created_at
 			});
 
 			var image = Ti.UI.createImageView({

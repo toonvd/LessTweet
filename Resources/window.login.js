@@ -1,9 +1,8 @@
 var win = Titanium.UI.currentWindow;
 win.backgroundImage = 'images/background-blue.png';
 win.barColor = '#000';
-var state = 0;
 var tableView = Ti.UI.createTableView({
-	top : 140,
+	top : Titanium.Platform.displayCaps.platformHeight * 0.11,
 });
 Ti.include("lib/twitter_api.js");
 var textField = Ti.UI.createTextField({
@@ -31,13 +30,7 @@ Ti.UI.currentWindow.add(buttonSubmit);
 
 buttonSubmit.addEventListener("click", function() {
 	Titanium.UI.Android.hideSoftKeyboard();
-	if(state == 1) {
-		if(tableView.data.length > 0) {
-			for(var i = tableView.data[0].rows.length - 1; i >= 0; i--) {
-				tableView.deleteRow(i);
-			}
-		}
-	}
+	
 
 	var rows = [];
 
@@ -48,6 +41,8 @@ buttonSubmit.addEventListener("click", function() {
 			url : "window.details.js",
 			tweet : el.rowData.tweet,
 			user_name : el.rowData.user_name,
+			image : el.rowData.image,
+			date : el.rowData.date,
 			barColor : Ti.UI.currentWindow.barColor,
 			backgroundColor : "#fff"
 		});
@@ -80,7 +75,9 @@ buttonSubmit.addEventListener("click", function() {
 					height : 50,
 					hasChild : true,
 					tweet : tweets[i].text,
-					user_name : tweets[i].from_user
+					user_name : tweets[i].from_user,
+					image : tweets[i].profile_image_url,
+					date : tweets[i].created_at
 				});
 
 				var image = Ti.UI.createImageView({

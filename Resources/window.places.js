@@ -6,7 +6,7 @@ win.backgroundImage = 'images/background-blue.png';
 win.barColor = '#000';
 var state = 0;
 var tableView = Ti.UI.createTableView({
-	top : 140,
+	top : Titanium.Platform.displayCaps.platformHeight * 0.11,
 });
 
 var buttonSearch = Ti.UI.createButton({
@@ -47,7 +47,6 @@ buttonSearch.addEventListener("click", function() {
 		Ti.API.debug(JSON.stringify(d));
 		Ti.Geolocation.removeEventListener('location', updatePosition);
 
-		
 	});
 	Titanium.Geolocation.getCurrentPosition(updatePosition);
 	Titanium.Geolocation.addEventListener('location', updatePosition);
@@ -79,6 +78,8 @@ buttonSearch.addEventListener("click", function() {
 			url : "window.details.js",
 			tweet : el.rowData.tweet,
 			user_name : el.rowData.user_name,
+			image : el.rowData.image,
+			date : el.rowData.date,
 			barColor : Ti.UI.currentWindow.barColor,
 			backgroundColor : "#fff"
 		});
@@ -101,7 +102,9 @@ buttonSearch.addEventListener("click", function() {
 				height : 70,
 				hasChild : true,
 				tweet : tweets[i].text,
-				user_name : tweets[i].from_user
+				user_name : tweets[i].from_user,
+				image : tweets[i].profile_image_url,
+				date : tweets[i].created_at
 			});
 
 			var image = Ti.UI.createImageView({

@@ -23,6 +23,7 @@
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
+    <property name="ti.android.fastdev" type="bool">false</property>
     <guid>ba0521f1-f93b-4a04-a751-7563be5e9e76</guid>
     <iphone>
         <orientations device="iphone">

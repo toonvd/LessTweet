@@ -2,7 +2,7 @@ var win = Titanium.UI.currentWindow;
 win.backgroundImage = 'images/background-blue.png';
 win.barColor = '#000';
 var tableView = Ti.UI.createTableView({
-	top : 140,
+	top : Titanium.Platform.displayCaps.platformHeight * 0.11,
 });
 
 var state = 0;
@@ -56,6 +56,8 @@ buttonSearch.addEventListener("click", function() {
 			title : "Details",
 			url : "window.details.js",
 			tweet : el.rowData.tweet,
+			image : el.rowData.image,
+			date : el.rowData.date,
 			user_name : el.rowData.user_name,
 			barColor : Ti.UI.currentWindow.barColor,
 			backgroundColor : "#fff"
@@ -84,7 +86,9 @@ buttonSearch.addEventListener("click", function() {
 					top : -70,
 					hasChild : true,
 					tweet : tweetText,
-					user_name : user
+					user_name : user,
+					image : avatar,
+					date : created_at
 				});
 
 				var image = Ti.UI.createImageView({
