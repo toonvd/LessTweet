@@ -6,21 +6,20 @@ var tableView = Ti.UI.createTableView({
 });
 Ti.include("lib/twitter_api.js");
 var textField = Ti.UI.createTextField({
-	hintText : "Geef hier je tweet in",
+		hintText : "Geef hier je tweet in",
 	backgroundColor : "#fff",
 	borderColor : "#fff",
 	borderWidth : 1,
-	borderRadius : Titanium.Platform.displayCaps.platformWidth * 0.01,
+	borderRadius : Titanium.Platform.displayCaps.platformWidth * 0.02,
 	left : Titanium.Platform.displayCaps.platformWidth * 0.02,
 	right : Titanium.Platform.displayCaps.platformWidth * 0.40,
 	top : 10,
-	height : 'auto'
+	height : 'auto',
 });
-
 Ti.UI.currentWindow.add(textField);
 
 var buttonSubmit = Ti.UI.createButton({
-	title : "Tweet posten",
+	title : "Posten",
 	left : Titanium.Platform.displayCaps.platformWidth * 0.65,
 	right : Titanium.Platform.displayCaps.platformWidth * 0.02,
 	top : 9,
