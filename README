@@ -1,7 +1,9 @@
 Opmerkingen:
 Gelieve de app te testen op gsm of gebruik telnet om een gpslocatie in te stellen op je emulator.
-Test voor michiel
+Wat je niet kan met deze app: forward/follow/respond/delete
+Wat je wel kan: nearby tweets, door tweets zoeken, tweets posten, je eigen timeline (mits een post) en die van andere users bekijken.
 
+1 bug over: bij het ingeven van een verkeerde waarde bij sUsers loopt hij vast, onerror vangde geen httpclienterror op :s
 
 ----------------------------------
 Stuff our legal folk make us say:
