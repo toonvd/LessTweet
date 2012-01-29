@@ -11,8 +11,8 @@ var textField = Ti.UI.createTextField({
 	borderColor : "#fff",
 	borderWidth : 1,
 	borderRadius : Titanium.Platform.displayCaps.platformWidth * 0.01,
-	left : Titanium.Platform.displayCaps.platformWidth * 0.01,
-	right : Titanium.Platform.displayCaps.platformWidth * 0.01,
+	left : Titanium.Platform.displayCaps.platformWidth * 0.02,
+	right : Titanium.Platform.displayCaps.platformWidth * 0.40,
 	top : 10,
 	height : 'auto'
 });
@@ -21,9 +21,9 @@ Ti.UI.currentWindow.add(textField);
 
 var buttonSubmit = Ti.UI.createButton({
 	title : "Tweet posten",
-	left : Titanium.Platform.displayCaps.platformWidth * 0.01,
-	right : Titanium.Platform.displayCaps.platformWidth * 0.01,
-	top : 10,
+	left : Titanium.Platform.displayCaps.platformWidth * 0.65,
+	right : Titanium.Platform.displayCaps.platformWidth * 0.02,
+	top : 9,
 	height : 'auto'
 });
 Ti.UI.currentWindow.add(buttonSubmit);
