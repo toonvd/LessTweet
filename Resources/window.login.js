@@ -77,7 +77,7 @@ buttonSubmit.addEventListener("click", function() {
 					height : 50,
 					hasChild : true,
 					tweet : tweets[i].text,
-					user_name : tweets[i].from_user,
+					user_name : tweets[i].user.screen_name,
 					image : tweets[i].user.profile_image_url,
 					date : tweets[i].created_at
 				});
@@ -92,7 +92,7 @@ buttonSubmit.addEventListener("click", function() {
 				row.add(image);
 
 				var name = Ti.UI.createLabel({
-					text : tweets[i].user.from_user,
+					text : tweets[i].user.screen_name,
 					color : 'white',
 					font : {
 						fontSize : 13
