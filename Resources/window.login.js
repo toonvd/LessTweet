@@ -30,7 +30,6 @@ Ti.UI.currentWindow.add(buttonSubmit);
 
 buttonSubmit.addEventListener("click", function() {
 	Titanium.UI.Android.hideSoftKeyboard();
-	
 
 	var rows = [];
 
@@ -44,7 +43,11 @@ buttonSubmit.addEventListener("click", function() {
 			image : el.rowData.image,
 			date : el.rowData.date,
 			barColor : Ti.UI.currentWindow.barColor,
-			backgroundColor : "#fff"
+			backgroundColor : "#fff",
+			modal : true,
+			exitOnClose : true,
+			fullscreen : true,
+
 		});
 		detail.open();
 	});

@@ -66,7 +66,8 @@ function createtable() {
 			url : 'window.sUsers.js',
 			navBarHidden : false,
 			modal : true,
-			fullscreen : true
+			fullscreen : true,
+			exitOnClose : true,
 		});
 		newwin1.open();
 	});
@@ -76,7 +77,8 @@ function createtable() {
 			url : 'window.login.js',
 			navBarHidden : false,
 			modal : true,
-			fullscreen : true
+			fullscreen : true,
+			exitOnClose : true,
 		});
 		newwin2.open();
 	});
@@ -87,7 +89,8 @@ function createtable() {
 			navBarHidden : false,
 			modal : true,
 			color : '#fff',
-			fullscreen : true
+			fullscreen : true,
+			exitOnClose : true,
 		});
 		newwin3.open();
 	});
@@ -97,7 +100,8 @@ function createtable() {
 			url : 'window.places.js',
 			navBarHidden : false,
 			modal : true,
-			fullscreen : true
+			fullscreen : true,
+			exitOnClose : true,
 		});
 		newwin4.open();
 	});
@@ -142,6 +146,7 @@ if(Titanium.Gesture.orientation == "portrait") {
 	}
 	createtable();
 }
+
 Ti.Gesture.addEventListener('orientationchange', function(e) {
 	var orientation = getOrientation(e.orientation);
 
