@@ -3,7 +3,7 @@ win.backgroundImage = 'images/background-blue.png';
 var TheTable = Titanium.UI.createTableView({
 	top : Titanium.Platform.displayCaps.platformWidth * 0.50
 });
-Ti.App.leftl
+Ti.App.leftl;
 var logo = Ti.UI.createImageView({
 	image : 'images/LesstweetLogo.png',
 	top : Titanium.Platform.displayCaps.platformWidth * 0.12,
