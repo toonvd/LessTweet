@@ -60,8 +60,8 @@ buttonSearch.addEventListener("click", function() {
 			barColor : Ti.UI.currentWindow.barColor,
 			backgroundColor : "#fff",
 			modal:true,
-				exitOnClose:true,
-			fullscreen:true
+			exitOnClose:true,
+			fullscreen:false
 		});
 		detail.open();
 	});

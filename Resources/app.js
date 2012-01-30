@@ -11,7 +11,7 @@ var win = Titanium.UI.createWindow({
     navBarHidden : false,
     exitOnClose: true,
     modal:true, 
-    fullscreen: true,
+    fullscreen: false,
     
 });
 win.open();

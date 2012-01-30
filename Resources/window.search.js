@@ -61,7 +61,10 @@ buttonSearch.addEventListener("click", function() {
 			date : el.rowData.date,
 			user_name : el.rowData.user_name,
 			barColor : Ti.UI.currentWindow.barColor,
-			backgroundColor : "#fff"
+			backgroundColor : "#fff",
+			fullscreen : false,
+			modal : true,
+			exitOnClose : true
 		});
 		detail.open();
 	});
@@ -72,13 +75,13 @@ buttonSearch.addEventListener("click", function() {
 	Ti.API.debug("http://api.twitter.com/1/statuses/user_timeline.json?count=10&screen_name=" + textField.value);
 
 	loaderTwitterSearch.open("GET", "http://api.twitter.com/1/statuses/user_timeline.json?count=10&screen_name=" + textField.value);
-	loaderTwitterSearch.onerror = function(){
+	loaderTwitterSearch.onerror = function() {
 		activityIndicator.hide();
 		alert("Error: controleer de opgegeven naam en uw connectie");
-		 	}
+	}
 	loaderTwitterSearch.onload = function() {
 		var tweets = JSON.parse(this.responseText);
-	
+
 		for(var i = 0; i < tweets.length; i++) {
 			for(var i = 0; i < tweets.length; i++) {
 				var tweetText = tweets[i].text;
@@ -135,8 +138,8 @@ buttonSearch.addEventListener("click", function() {
 			tableView.setData(rows);
 			activityIndicator.hide();
 		}
-	
-}
+
+	}
 	loaderTwitterSearch.send();
 	state = 1;
 })

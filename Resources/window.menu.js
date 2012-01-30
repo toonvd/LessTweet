@@ -66,7 +66,7 @@ function createtable() {
 			url : 'window.sUsers.js',
 			navBarHidden : false,
 			modal : true,
-			fullscreen : true,
+			fullscreen : false,
 			exitOnClose : true,
 		});
 		newwin1.open();
@@ -77,7 +77,7 @@ function createtable() {
 			url : 'window.login.js',
 			navBarHidden : false,
 			modal : true,
-			fullscreen : true,
+			fullscreen : false,
 			exitOnClose : true,
 		});
 		newwin2.open();
@@ -89,7 +89,7 @@ function createtable() {
 			navBarHidden : false,
 			modal : true,
 			color : '#fff',
-			fullscreen : true,
+			fullscreen : false,
 			exitOnClose : true,
 		});
 		newwin3.open();
@@ -100,7 +100,7 @@ function createtable() {
 			url : 'window.places.js',
 			navBarHidden : false,
 			modal : true,
-			fullscreen : true,
+			fullscreen : false,
 			exitOnClose : true,
 		});
 		newwin4.open();

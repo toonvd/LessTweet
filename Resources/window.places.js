@@ -85,7 +85,7 @@ buttonSearch.addEventListener("click", function() {
 				barColor : Ti.UI.currentWindow.barColor,
 				backgroundColor : "#fff",
 				modal:true,
-				fullscreen:true,
+				fullscreen:false,
 				exitOnClose:true
 			});
 
