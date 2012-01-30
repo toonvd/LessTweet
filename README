@@ -8,6 +8,7 @@ Wat je wel kan: nearby tweets, door tweets zoeken, tweets posten, je eigen timel
 Update: het graphicsprobleem was niet afhankelijk van de android-sdk maar van de titanium sdk waarmee ik het distribute, op mijn laptop had ik 1.7.2 op mijn desktop 1.8.0.1
 Met een v8 android runtime (deze versie kan je enkel installeren met de nieuwere draft versie van tit) indien je dit niet hebt, heb ik nog steeds de werkende apk op mijn ftp.
 
+Wat betreft de status bar notifications: http://jira.appcelerator.org/browse/TIMOB-6928 Bedankt titanium :( een gewone zit er wel in :))
 ----------------------------------
 Stuff our legal folk make us say:
 
