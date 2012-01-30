@@ -1,22 +1,25 @@
 //test
-var countdown = 7;
 
 
-var n = Ti.UI.createNotification({message:"Pop uup"});
 
-n.duration = Titanium.UI.NOTIFICATION_DURATION_LONG;
+var n = Ti.UI.createNotification({message:"pop uuup"});
+
+n.duration = Ti.UI.NOTIFICATION_DURATION_LONG
+
+
 n.offsetX = 100;
 n.offsetY = 100;
 counter = 0;
 
-var countdownSeconds = setInterval(function() {
-l.text = l.text + countdown+"..";
-countdown = countdown -1;
-if (countdown <0) {
-clearInterval(countdownSeconds);
-n.show();
+while(counter <10)
+{
+	if(counter = 10)
+	{
+		n.show();
+	}
+	counter++;
+	
 }
-},1000);
 
 
 

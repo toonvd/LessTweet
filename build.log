@@ -1,31 +1,43 @@
 Logfile initialized
 [INFO] logfile = C:\Users\Toon\Desktop\workspace\LessTweet\build.log
-[DEBUG] C:\Users\Toon\AppData\Roaming\Titanium\mobilesdk\win32\1.8.0.1\android\builder.py simulator LessTweet C:\Program Files (x86)\Android\android-sdk C:\Users\Toon\Desktop\workspace\LessTweet com.LessTweet 7 HVGA
-[INFO] Building LessTweet for Android ... one moment
+[DEBUG] C:\Users\Toon\AppData\Roaming\Titanium\mobilesdk\win32\1.8.0.1\android\builder.py distribute LessTweet C:\Program Files (x86)\Android\android-sdk C:\Users\Toon\Desktop\workspace\LessTweet com.LessTweet C:\Users\Toon\AppData\Roaming\Titanium\mobilesdk\win32\1.8.0.1\android\dev_keystore tirocks tidev C:\Users\Toon\Desktop 7
 [INFO] Titanium SDK version: 1.8.0.1 (12/22/11 13:09 fbdc96f)
-[DEBUG] Waiting for device to be ready ...
-[TRACE] adb devices returned 1 devices/emulators
-[TRACE] adb devices returned 1 devices/emulators
-[TRACE] adb devices returned 1 devices/emulators
-[TRACE] adb devices returned 1 devices/emulators
-[DEBUG] Device connected... (waited 15 seconds)
-[DEBUG] waited 15.034000 seconds on emulator to get ready
-[INFO] Waiting for the Android Emulator to become available
-[DEBUG] com.LessTweet installed? True
 [INFO] Copying project resources..
-[INFO] Tiapp.xml unchanged, skipping class generation
+[TRACE] COPYING MODIFIED FILE: C:\Users\Toon\Desktop\workspace\LessTweet\Resources\window.menu.js => C:\Users\Toon\Desktop\workspace\LessTweet\build\android\bin\assets\Resources\window.menu.js
+[TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
+[DEBUG] copying app icon: C:\Users\Toon\Desktop\workspace\LessTweet\build\android\bin\assets\Resources\appicon.png
+[DEBUG] generating theme.xml
 [DEBUG] found drawable-long-land-hdpi splash screen at C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-long-land-hdpi\default.png
+[DEBUG] copying C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-long-land-hdpi\default.png splash screen to C:\Users\Toon\Desktop\workspace\LessTweet\build\android\res\drawable-long-land-hdpi\background.png
 [DEBUG] found drawable-long-land-ldpi splash screen at C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-long-land-ldpi\default.png
+[DEBUG] copying C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-long-land-ldpi\default.png splash screen to C:\Users\Toon\Desktop\workspace\LessTweet\build\android\res\drawable-long-land-ldpi\background.png
 [DEBUG] found drawable-long-port-hdpi splash screen at C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-long-port-hdpi\default.png
+[DEBUG] copying C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-long-port-hdpi\default.png splash screen to C:\Users\Toon\Desktop\workspace\LessTweet\build\android\res\drawable-long-port-hdpi\background.png
 [DEBUG] found drawable-long-port-ldpi splash screen at C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-long-port-ldpi\default.png
+[DEBUG] copying C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-long-port-ldpi\default.png splash screen to C:\Users\Toon\Desktop\workspace\LessTweet\build\android\res\drawable-long-port-ldpi\background.png
 [DEBUG] found drawable-notlong-land-hdpi splash screen at C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-notlong-land-hdpi\default.png
+[DEBUG] copying C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-notlong-land-hdpi\default.png splash screen to C:\Users\Toon\Desktop\workspace\LessTweet\build\android\res\drawable-notlong-land-hdpi\background.png
 [DEBUG] found drawable-notlong-land-ldpi splash screen at C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-notlong-land-ldpi\default.png
+[DEBUG] copying C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-notlong-land-ldpi\default.png splash screen to C:\Users\Toon\Desktop\workspace\LessTweet\build\android\res\drawable-notlong-land-ldpi\background.png
 [DEBUG] found drawable-notlong-land-mdpi splash screen at C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-notlong-land-mdpi\default.png
+[DEBUG] copying C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-notlong-land-mdpi\default.png splash screen to C:\Users\Toon\Desktop\workspace\LessTweet\build\android\res\drawable-notlong-land-mdpi\background.png
 [DEBUG] found drawable-notlong-port-hdpi splash screen at C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-notlong-port-hdpi\default.png
+[DEBUG] copying C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-notlong-port-hdpi\default.png splash screen to C:\Users\Toon\Desktop\workspace\LessTweet\build\android\res\drawable-notlong-port-hdpi\background.png
 [DEBUG] found drawable-notlong-port-ldpi splash screen at C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-notlong-port-ldpi\default.png
+[DEBUG] copying C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-notlong-port-ldpi\default.png splash screen to C:\Users\Toon\Desktop\workspace\LessTweet\build\android\res\drawable-notlong-port-ldpi\background.png
 [DEBUG] found drawable-notlong-port-mdpi splash screen at C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-notlong-port-mdpi\default.png
-[INFO] Waiting for SDCard to become available..
+[DEBUG] copying C:\Users\Toon\Desktop\workspace\LessTweet\Resources\android\images\res-notlong-port-mdpi\default.png splash screen to C:\Users\Toon\Desktop\workspace\LessTweet\build\android\res\drawable-notlong-port-mdpi\background.png
+[DEBUG] found splash screen at C:\Users\Toon\Desktop\workspace\LessTweet\build\android\bin\assets\Resources\default.png
+[TRACE] Writing out AndroidManifest.xml
+[DEBUG] adding C:\Users\Toon\Desktop\workspace\LessTweet\build\android\gen\com\LessTweet\AppActivity.java to javac build list
+[DEBUG] adding C:\Users\Toon\Desktop\workspace\LessTweet\build\android\gen\com\LessTweet\LesstweetActivity.java to javac build list
+[DEBUG] adding C:\Users\Toon\Desktop\workspace\LessTweet\build\android\gen\com\LessTweet\LesstweetAppInfo.java to javac build list
+[DEBUG] adding C:\Users\Toon\Desktop\workspace\LessTweet\build\android\gen\com\LessTweet\LesstweetApplication.java to javac build list
+[DEBUG] adding C:\Users\Toon\Desktop\workspace\LessTweet\build\android\gen\com\LessTweet\R.java to javac build list
+[DEBUG] Building Java Sources: "C:\\Users\\Toon\\Desktop\\workspace\\LessTweet\\build\\android\\gen\\com\\LessTweet\\AppActivity.java" "C:\\Users\\Toon\\Desktop\\workspace\\LessTweet\\build\\android\\gen\\com\\LessTweet\\LesstweetActivity.java" "C:\\Users\\Toon\\Desktop\\workspace\\LessTweet\\build\\android\\gen\\com\\LessTweet\\LesstweetAppInfo.java" "C:\\Users\\Toon\\Desktop\\workspace\\LessTweet\\build\\android\\gen\\com\\LessTweet\\LesstweetApplication.java" "C:\\Users\\Toon\\Desktop\\workspace\\LessTweet\\build\\android\\gen\\com\\LessTweet\\R.java"
+[INFO] Compiling Android Resources... This could take some time
+[DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: C:\Users\Toon\Desktop\workspace\LessTweet\build\android\bin\app-unsigned.apk
 [DEBUG] from resource zip => assets/Resources/images/Knop1.png
 [DEBUG] from resource zip => assets/Resources/images/Knop2.png
@@ -89,12 +101,3 @@ Logfile initialized
 [DEBUG] from JAR C:\Users\Toon\AppData\Roaming\Titanium\mobilesdk\win32\1.8.0.1\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
 [DEBUG] from JAR C:\Users\Toon\AppData\Roaming\Titanium\mobilesdk\win32\1.8.0.1\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
 [DEBUG] from JAR C:\Users\Toon\AppData\Roaming\Titanium\mobilesdk\win32\1.8.0.1\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
-[DEBUG] Waiting for device to be ready ...
-[TRACE] adb devices returned 1 devices/emulators
-[DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.007000 seconds on emulator to get ready
-[INFO] Installing application on device
-[INFO] Launching application ... LessTweet
-[TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.LessTweet/.LesstweetActivity }
-
-[INFO] Deployed LessTweet ... Application should be running.
