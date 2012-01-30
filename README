@@ -5,6 +5,9 @@ Wat je wel kan: nearby tweets, door tweets zoeken, tweets posten, je eigen timel
 
 1 bug over: bij trage gps verwerking moet je in nearby tweets soms een tweede keer zoeken drukken (blijf in de pagina)
 
+Update: het graphicsprobleem was niet afhankelijk van de android-sdk maar van de titanium sdk waarmee ik het distribute, op mijn laptop had ik 1.7.2 op mijn desktop 1.8.0.1
+Met een v8 android runtime (deze versie kan je enkel installeren met de nieuwere draft versie van tit) indien je dit niet hebt, heb ik nog steeds de werkende apk op mijn ftp.
+
 ----------------------------------
 Stuff our legal folk make us say:
 
