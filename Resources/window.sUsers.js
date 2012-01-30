@@ -3,7 +3,7 @@ win.backgroundImage = 'images/background-blue.png';
 win.barColor = '#000';
 var state = 0;
 var tableView = Ti.UI.createTableView({
-	top : 140,
+	top : Titanium.Platform.displayCaps.platformHeight * 0.11,
 });
 var textField = Ti.UI.createTextField({
 	hintText : "Zoeken over twitter",
@@ -48,7 +48,6 @@ buttonSearch.addEventListener("click", function() {
 		});
 	}
 	activityIndicator.show();
-
 	Ti.UI.currentWindow.add(tableView);
 	tableView.addEventListener("click", function(el) {
 		var detail = Ti.UI.createWindow({
@@ -56,9 +55,13 @@ buttonSearch.addEventListener("click", function() {
 			url : "window.details.js",
 			tweet : el.rowData.tweet,
 			user_name : el.rowData.user_name,
-			image:el.rowData.image,
+			image : el.rowData.image,
+			date : el.rowData.date,
 			barColor : Ti.UI.currentWindow.barColor,
-			backgroundColor : "#fff"
+			backgroundColor : "#fff",
+			modal:true,
+				exitOnClose:true,
+			fullscreen:true
 		});
 		detail.open();
 	});
@@ -72,7 +75,14 @@ buttonSearch.addEventListener("click", function() {
 	loaderTwitterSearch.onload = function() {
 		var result = JSON.parse(this.responseText);
 		var tweets = result.results;
-
+	
+		if(tweets.length == 0.0)
+		{
+			activityIndicator.hide();
+			alert("Er is iets misgelopen: check je internetverbinding en je zoekterm.");
+		}
+		else
+		{
 		for(var i = 0; i < tweets.length; i++) {
 			var row = Ti.UI.createTableViewRow({
 				height : 'auto',
@@ -80,7 +90,8 @@ buttonSearch.addEventListener("click", function() {
 				hasChild : true,
 				tweet : tweets[i].text,
 				user_name : tweets[i].from_user,
-					image:tweets[i].profile_image_url
+				image : tweets[i].profile_image_url,
+				date : tweets[i].created_at
 			});
 
 			var image = Ti.UI.createImageView({
@@ -121,8 +132,10 @@ buttonSearch.addEventListener("click", function() {
 		}
 		tableView.setData(rows);
 		activityIndicator.hide();
-	}
+		}
+	}  	
 	loaderTwitterSearch.send();
+	
 	state = 1;
 })
 // MENU!!!
