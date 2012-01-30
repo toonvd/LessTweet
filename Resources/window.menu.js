@@ -1,3 +1,28 @@
+//test
+var countdown = 7;
+
+
+var n = Ti.UI.createNotification({message:"Pop uup"});
+
+n.duration = Titanium.UI.NOTIFICATION_DURATION_LONG;
+n.offsetX = 100;
+n.offsetY = 100;
+counter = 0;
+
+var countdownSeconds = setInterval(function() {
+l.text = l.text + countdown+"..";
+countdown = countdown -1;
+if (countdown <0) {
+clearInterval(countdownSeconds);
+n.show();
+}
+},1000);
+
+
+
+
+//Gshit
+
 var win = Titanium.UI.currentWindow;
 win.backgroundImage = 'images/background-blue.png';
 var TheTable = Titanium.UI.createTableView({
