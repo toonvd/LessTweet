@@ -1,9 +1,15 @@
 Logfile initialized
 [INFO] logfile = C:\Users\Toon\Desktop\workspace\LessTweet\build.log
-[DEBUG] C:\Users\Toon\AppData\Roaming\Titanium\mobilesdk\win32\1.8.0.1\android\builder.py distribute LessTweet C:\Program Files (x86)\Android\android-sdk C:\Users\Toon\Desktop\workspace\LessTweet com.LessTweet C:\Users\Toon\AppData\Roaming\Titanium\mobilesdk\win32\1.8.0.1\android\dev_keystore tirocks tidev C:\Users\Toon\Desktop 7
+[DEBUG] C:\Users\Toon\AppData\Roaming\Titanium\mobilesdk\win32\1.8.0.1\android\builder.py simulator LessTweet C:\Program Files (x86)\Android\android-sdk C:\Users\Toon\Desktop\workspace\LessTweet com.LessTweet 7 HVGA
+[INFO] Building LessTweet for Android ... one moment
 [INFO] Titanium SDK version: 1.8.0.1 (12/22/11 13:09 fbdc96f)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.009000 seconds on emulator to get ready
+[DEBUG] com.LessTweet installed? True
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Users\Toon\Desktop\workspace\LessTweet\Resources\window.menu.js => C:\Users\Toon\Desktop\workspace\LessTweet\build\android\bin\assets\Resources\window.menu.js
+[TRACE] COPYING MODIFIED FILE: C:\Users\Toon\Desktop\workspace\LessTweet\Resources\window.sUsers.js => C:\Users\Toon\Desktop\workspace\LessTweet\build\android\bin\assets\Resources\window.sUsers.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Users\Toon\Desktop\workspace\LessTweet\build\android\bin\assets\Resources\appicon.png
@@ -36,6 +42,7 @@ Logfile initialized
 [DEBUG] adding C:\Users\Toon\Desktop\workspace\LessTweet\build\android\gen\com\LessTweet\LesstweetApplication.java to javac build list
 [DEBUG] adding C:\Users\Toon\Desktop\workspace\LessTweet\build\android\gen\com\LessTweet\R.java to javac build list
 [DEBUG] Building Java Sources: "C:\\Users\\Toon\\Desktop\\workspace\\LessTweet\\build\\android\\gen\\com\\LessTweet\\AppActivity.java" "C:\\Users\\Toon\\Desktop\\workspace\\LessTweet\\build\\android\\gen\\com\\LessTweet\\LesstweetActivity.java" "C:\\Users\\Toon\\Desktop\\workspace\\LessTweet\\build\\android\\gen\\com\\LessTweet\\LesstweetAppInfo.java" "C:\\Users\\Toon\\Desktop\\workspace\\LessTweet\\build\\android\\gen\\com\\LessTweet\\LesstweetApplication.java" "C:\\Users\\Toon\\Desktop\\workspace\\LessTweet\\build\\android\\gen\\com\\LessTweet\\R.java"
+[INFO] Waiting for SDCard to become available..
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: C:\Users\Toon\Desktop\workspace\LessTweet\build\android\bin\app-unsigned.apk
@@ -101,3 +108,12 @@ Logfile initialized
 [DEBUG] from JAR C:\Users\Toon\AppData\Roaming\Titanium\mobilesdk\win32\1.8.0.1\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
 [DEBUG] from JAR C:\Users\Toon\AppData\Roaming\Titanium\mobilesdk\win32\1.8.0.1\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
 [DEBUG] from JAR C:\Users\Toon\AppData\Roaming\Titanium\mobilesdk\win32\1.8.0.1\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.010000 seconds on emulator to get ready
+[INFO] Installing application on device
+[INFO] Launching application ... LessTweet
+[TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.LessTweet/.LesstweetActivity }
+
+[INFO] Deployed LessTweet ... Application should be running.

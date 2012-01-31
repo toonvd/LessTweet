@@ -84,9 +84,10 @@ buttonSearch.addEventListener("click", function() {
 				date : el.rowData.date,
 				barColor : Ti.UI.currentWindow.barColor,
 				backgroundColor : "#fff",
-				modal:true,
-				fullscreen:false,
-				exitOnClose:true
+				backgroundImage : 'images/background-blue.png',
+				modal : true,
+				fullscreen : false,
+				exitOnClose : true
 			});
 
 			detail.open();
@@ -149,11 +150,10 @@ buttonSearch.addEventListener("click", function() {
 			}
 
 			tableView.setData(rows);
-	activityIndicator.hide();
+			activityIndicator.hide();
 		}
 
 		loaderTwitterSearch.send();
-	
 		state = 1;
 	} else {
 		activityIndicator.hide();

@@ -59,9 +59,10 @@ buttonSearch.addEventListener("click", function() {
 			date : el.rowData.date,
 			barColor : Ti.UI.currentWindow.barColor,
 			backgroundColor : "#fff",
-			modal:true,
-			exitOnClose:true,
-			fullscreen:false
+			backgroundImage : 'images/background-blue.png',
+			modal : true,
+			exitOnClose : true,
+			fullscreen : false
 		});
 		detail.open();
 	});
@@ -75,67 +76,63 @@ buttonSearch.addEventListener("click", function() {
 	loaderTwitterSearch.onload = function() {
 		var result = JSON.parse(this.responseText);
 		var tweets = result.results;
-	
-		if(tweets.length == 0.0)
-		{
+
+		if(tweets.length == 0.0) {
 			activityIndicator.hide();
 			alert("Er is iets misgelopen: check je internetverbinding en je zoekterm.");
-		}
-		else
-		{
-		for(var i = 0; i < tweets.length; i++) {
-			var row = Ti.UI.createTableViewRow({
-				height : 'auto',
-				top : -70,
-				hasChild : true,
-				tweet : tweets[i].text,
-				user_name : tweets[i].from_user,
-				image : tweets[i].profile_image_url,
-				date : tweets[i].created_at
-			});
+		} else {
+			for(var i = 0; i < tweets.length; i++) {
+				var row = Ti.UI.createTableViewRow({
+					height : 'auto',
+					top : -70,
+					hasChild : true,
+					tweet : tweets[i].text,
+					user_name : tweets[i].from_user,
+					image : tweets[i].profile_image_url,
+					date : tweets[i].created_at
+				});
 
-			var image = Ti.UI.createImageView({
-				image : tweets[i].profile_image_url,
-				left : Titanium.Platform.displayCaps.platformWidth * 0.01,
-				top : Titanium.Platform.displayCaps.platformWidth * 0.01,
-				bottom : Titanium.Platform.displayCaps.platformWidth * 0.01,
-				width : Titanium.Platform.displayCaps.platformWidth * 0.10,
-				height : Titanium.Platform.displayCaps.platformWidth * 0.10
-			});
-			row.add(image);
+				var image = Ti.UI.createImageView({
+					image : tweets[i].profile_image_url,
+					left : Titanium.Platform.displayCaps.platformWidth * 0.01,
+					top : Titanium.Platform.displayCaps.platformWidth * 0.01,
+					bottom : Titanium.Platform.displayCaps.platformWidth * 0.01,
+					width : Titanium.Platform.displayCaps.platformWidth * 0.10,
+					height : Titanium.Platform.displayCaps.platformWidth * 0.10
+				});
+				row.add(image);
 
-			var name = Ti.UI.createLabel({
-				text : tweets[i].from_user,
-				font : {
-					fontSize : Titanium.Platform.displayCaps.platformWidth * 0.04
-				},
-				left : Titanium.Platform.displayCaps.platformWidth * 0.14,
-				top : Titanium.Platform.displayCaps.platformWidth * 0.01,
-				color : '#09969b',
-				height : 'auto'
-			});
-			row.add(name);
+				var name = Ti.UI.createLabel({
+					text : tweets[i].from_user,
+					font : {
+						fontSize : Titanium.Platform.displayCaps.platformWidth * 0.04
+					},
+					left : Titanium.Platform.displayCaps.platformWidth * 0.14,
+					top : Titanium.Platform.displayCaps.platformWidth * 0.01,
+					color : '#09969b',
+					height : 'auto'
+				});
+				row.add(name);
 
-			var tweet = Ti.UI.createLabel({
-				text : tweets[i].text,
-				color : 'white',
-				font : {
-					fontSize : Titanium.Platform.displayCaps.platformWidth * 0.04
-				},
-				left : Titanium.Platform.displayCaps.platformWidth * 0.16,
-				height : 'auto',
-				top : Titanium.Platform.displayCaps.platformWidth * 0.06,
-				bottom : Titanium.Platform.displayCaps.platformWidth * 0.02
-			});
-			row.add(tweet);
-			rows.push(row);
+				var tweet = Ti.UI.createLabel({
+					text : tweets[i].text,
+					color : 'white',
+					font : {
+						fontSize : Titanium.Platform.displayCaps.platformWidth * 0.04
+					},
+					left : Titanium.Platform.displayCaps.platformWidth * 0.16,
+					height : 'auto',
+					top : Titanium.Platform.displayCaps.platformWidth * 0.06,
+					bottom : Titanium.Platform.displayCaps.platformWidth * 0.02
+				});
+				row.add(tweet);
+				rows.push(row);
+			}
+			tableView.setData(rows);
+			activityIndicator.hide();
 		}
-		tableView.setData(rows);
-		activityIndicator.hide();
-		}
-	}  	
+	}
 	loaderTwitterSearch.send();
-	
 	state = 1;
 })
 // MENU!!!

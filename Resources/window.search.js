@@ -62,6 +62,7 @@ buttonSearch.addEventListener("click", function() {
 			user_name : el.rowData.user_name,
 			barColor : Ti.UI.currentWindow.barColor,
 			backgroundColor : "#fff",
+			backgroundImage : 'images/background-blue.png',
 			fullscreen : false,
 			modal : true,
 			exitOnClose : true

@@ -6,7 +6,7 @@ var tableView = Ti.UI.createTableView({
 });
 Ti.include("lib/twitter_api.js");
 var textField = Ti.UI.createTextField({
-		hintText : "tweet",
+	hintText : "tweet",
 	backgroundColor : "#fff",
 	borderColor : "#fff",
 	borderWidth : 1,
@@ -44,6 +44,7 @@ buttonSubmit.addEventListener("click", function() {
 			barColor : Ti.UI.currentWindow.barColor,
 			backgroundColor : "#fff",
 			modal : true,
+			backgroundImage : 'images/background-blue.png',
 			exitOnClose : true,
 			fullscreen : true,
 
